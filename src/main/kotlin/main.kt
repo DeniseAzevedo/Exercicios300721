@@ -1,6 +1,7 @@
 fun main(){
     println("Hello world!")
     println(maiorNumero(1,9,15))
+    println(compare("Denise", "Denise"))
 }
 
 fun maiorNumero(
@@ -16,4 +17,10 @@ fun maiorNumero(
         maior = numero3
     }
     return maior
+}
+
+fun compare(texto1: String, texto2: String): Boolean {
+    if(texto1 != texto2) {
+        return true
+    } else return false
 }
