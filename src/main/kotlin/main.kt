@@ -1,7 +1,8 @@
 fun main(){
     println("Hello world!")
-    println(maiorNumero(1,9,15))
-    println(compare("Denise", "Denise"))
+    println("Maior valor é: " + maiorNumero(1,9,15))
+    println("Textos são iguais? " + compare("Denise", "Denise"))
+    println("Numero é par? " + numeroPar(11))
 }
 
 fun maiorNumero(
@@ -21,6 +22,12 @@ fun maiorNumero(
 
 fun compare(texto1: String, texto2: String): Boolean {
     if(texto1 != texto2) {
+        return true
+    } else return false
+}
+
+fun numeroPar(numero: Int): Boolean {
+    if(numero % 2 == 0){
         return true
     } else return false
 }
