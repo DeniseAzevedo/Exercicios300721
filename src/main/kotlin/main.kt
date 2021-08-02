@@ -45,11 +45,16 @@ fun numerosImpares(): MutableList<Int> {
     var cemPrimeiros = mutableListOf<Int>()
     var numero = 1
     var i = 0
+    var quebraLinha = 10
 
     while(i < 100) {
         if( (numero % 2) != 0) {
             cemPrimeiros.add(numero)
             i++
+            if(i == quebraLinha){
+                println()
+                quebraLinha += 10
+            }
         }
         numero += 2
     }
@@ -66,11 +71,16 @@ fun cemNumPositivo(): MutableList<Int> {
     var numPares = mutableListOf<Int>()
     var numero = 0
     var i = 0
+    var quebraLinha = 10
 
     while (i < 100) {
         if ((numero % 2) == 0) {
             numPares.add(numero)
             i++
+            if(i == quebraLinha){
+                println()
+                quebraLinha += 10
+            }
         }
         numero += 2
     }
